@@ -1,0 +1,146 @@
+* {
+    font-family: "exo", sans-serif;
+}
+
+body,
+ul,
+li,
+p {
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    list-style: none;
+    font-size: 1.2rem;
+}
+
+a {
+    text-decoration: none;
+    font-family: 'Jersey 10' , sans-serif;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 100px;
+    font-family: 'Jersey 10', sans-serif;
+    color: #c6c6c6;
+}
+
+body {
+    background-image: url('./imagem/background.png');
+    background-size: 100%;
+}
+
+.container {
+    padding: 0 auto;
+    margin: 0 auto;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    width: 100%;
+    top: 0;
+    background-color: rgb(40, 31, 54, 0.5);
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+nav a {
+    display:flex;
+    padding: 16px;
+    transition: 0.5s ease, color 0.5s ease, 0.5s ease;
+    color: whitesmoke;
+}
+
+nav a:hover {
+    background-color: none;
+    color: none;
+    background-color: none;
+    transform: scale(1.2)
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li a{
+    padding: 0 auto;
+    margin: auto;
+    text-decoration: none;
+    font-size: 20px;
+    color: wheat;
+    border-radius: 30px;
+    letter-spacing: 4px;
+}
+
+.imagem-servicos {
+    display: flex;
+    flex-direction: column;
+}
+
+.informacoes {
+    display: flex;
+    flex-direction: column;
+}
+
+.informacoes h1 {
+    font-size: 8rem;
+}
+
+.informacoes img {
+    width: 50%;
+    border-radius: 10%;
+    margin: 24px;
+}
+
+.informacoes h1 {
+    text-transform: uppercase;
+    text-decoration-line: underline;
+}
+
+.informacoes p {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 800px;
+    margin: 0 auto;
+    padding-bottom: 40px;
+    font-size: larger;
+    font-style: none;
+    color: white;
+    letter-spacing: 2px;
+    font-family: 'Jersey 10' , sans-serif;
+}
+
+span {
+    font-family: 'Jersey 10', sans-serif;
+    color: #4F4F4F;
+}
+
+.insta {
+    display: flex;
+    flex-direction: row-reverse;
+    padding-top: 100px;
+    align-items: center;
+}
+
+.insta p {
+    padding: 24px;
+    font-size: larger;
+    letter-spacing: 2px;
+}
+
+.texto-footer {
+    background-color: #4F4F4F;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    align-items: center;
+    flex-wrap: wrap;
+}

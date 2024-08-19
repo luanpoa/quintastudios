@@ -1,0 +1,159 @@
+* {
+    font-family: "exo" , sans-serif;
+}
+
+body, ul, li, p {
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    list-style: none;
+    font-size: 1.2rem;
+}
+
+a {
+    text-decoration: none;
+    font-family: 'Jersey 10' , sans-serif;
+}
+
+h1, h2 {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: 'Jersey 10' , sans-serif;
+    color: #c6c6c6;
+}
+
+body {
+    background-image: url('./imagem/background.png');
+    background-size: 100%;
+}
+
+.container {
+    padding: 0 auto;
+    margin: 0 auto;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    width: 100%;
+    top: 0;
+    background-color: rgb(40, 31, 54, 0.5);
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+nav a {
+    display:flex;
+    padding: 16px;
+    transition: 0.5s ease, color 0.5s ease, 0.5s ease;
+    color: whitesmoke;
+}
+
+nav a:hover {
+    background-color: none;
+    color: none;
+    background-color: none;
+    transform: scale(1.2)
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li a{
+    padding: 0 auto;
+    margin: auto;
+    text-decoration: none;
+    font-size: 20px;
+    color: wheat;
+    border-radius: 30px;
+    letter-spacing: 4px;
+}
+
+.comeco {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 0;
+    margin-bottom: 10rem;
+    padding-bottom: 10rem;
+}
+
+.comeco img {
+    padding: 0;
+    border: 0;
+    margin: 0;
+}
+
+.comeco h1 {
+    text-transform: uppercase;
+    text-decoration-line: underline;
+    font-size: 8rem;
+}
+
+.comeco h2 {
+    font-size: 2.5rem;
+    text-shadow: 1px 1px 2px purple;
+}
+
+.comeco span {
+    font-family: 'Jersey 10' , sans-serif;
+    color: #4F4F4F;
+}
+
+.video {
+    padding: 24px;
+    margin: 24px 0;
+}
+
+.inicio {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 0;
+}
+
+.inicio h1 {
+    text-transform: uppercase;
+    text-decoration-line: underline;
+    font-size: 5rem;
+    padding: 0;
+}
+
+.inicio span {
+    font-family: 'Jersey 10' , sans-serif;
+    color: #4F4F4F;
+}
+
+.resumo {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 5px;
+    font-size: larger;
+    font-style:initial;
+    color: white;
+    letter-spacing: 2px;
+    font-family: 'Jersey 10' , sans-serif;
+    text-transform: none;
+}
+
+.texto-footer {
+    background-color: #4F4F4F;
+    display: flex;
+    justify-content: center;
+    padding: 0px;
+    margin-top: 10px;
+    align-items: center;
+    flex-wrap: wrap;
+}
