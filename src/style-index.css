@@ -1,8 +1,11 @@
 * {
-    font-family: "exo" , sans-serif;
+    font-family: "exo", sans-serif;
 }
 
-body, ul, li, p {
+body,
+ul,
+li,
+p {
     margin: 0px;
     padding: 0px;
     border: 0px;
@@ -12,15 +15,16 @@ body, ul, li, p {
 
 a {
     text-decoration: none;
-    font-family: 'Jersey 10' , sans-serif;
+    font-family: 'Jersey 10', sans-serif;
 }
 
-h1, h2 {
+h1,
+h2 {
     text-align: center;
     margin: 0;
     padding: 0;
     border: 0;
-    font-family: 'Jersey 10' , sans-serif;
+    font-family: 'Jersey 10', sans-serif;
     color: #c6c6c6;
 }
 
@@ -52,7 +56,7 @@ nav ul {
 }
 
 nav a {
-    display:flex;
+    display: flex;
     padding: 16px;
     transition: 0.5s ease, color 0.5s ease, 0.5s ease;
     color: whitesmoke;
@@ -69,7 +73,7 @@ nav ul li {
     display: inline-block;
 }
 
-nav ul li a{
+nav ul li a {
     padding: 0 auto;
     margin: auto;
     text-decoration: none;
@@ -84,8 +88,8 @@ nav ul li a{
     align-items: center;
     flex-direction: column;
     padding: 0;
-    margin-bottom: 10rem;
-    padding-bottom: 10rem;
+    margin-bottom: 3rem;
+    padding-bottom: 3rem;
 }
 
 .comeco img {
@@ -106,7 +110,7 @@ nav ul li a{
 }
 
 .comeco span {
-    font-family: 'Jersey 10' , sans-serif;
+    font-family: 'Jersey 10', sans-serif;
     color: #4F4F4F;
 }
 
@@ -130,7 +134,7 @@ nav ul li a{
 }
 
 .inicio span {
-    font-family: 'Jersey 10' , sans-serif;
+    font-family: 'Jersey 10', sans-serif;
     color: #4F4F4F;
 }
 
@@ -141,10 +145,10 @@ nav ul li a{
     margin: 0 auto;
     padding: 5px;
     font-size: larger;
-    font-style:initial;
+    font-style: initial;
     color: white;
     letter-spacing: 2px;
-    font-family: 'Jersey 10' , sans-serif;
+    font-family: 'Jersey 10', sans-serif;
     text-transform: none;
 }
 
@@ -156,4 +160,41 @@ nav ul li a{
     margin-top: 10px;
     align-items: center;
     flex-wrap: wrap;
+}
+
+@media screen and (max-width: 768px) {
+
+    body {
+        background-size:cover;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .logo img {
+        width: 40vw;
+    }
+
+    .logo a {
+        width: 40vw;
+    }
+
+    nav ul {
+        display: block;
+        text-wrap: wrap;
+        text-align: center;
+        justify-content: space-between;
+    }
+
+    .footer {
+        bottom: 500px;
+        margin-top: 150px;
+        padding-bottom: 0;
+    }
+    
+    .texto-footer {
+        margin-top: 100px;
+    }
 }

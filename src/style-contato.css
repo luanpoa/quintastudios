@@ -8,6 +8,7 @@ body, ul, li, p {
     border: 0px;
     list-style: none;
     font-size: 1.2rem;
+    box-sizing: border-box;
 }
 
 a {
@@ -103,10 +104,6 @@ nav ul li a{
     box-shadow: 2px 2px 20px #5fe690;
 }
 
-
-
-
-/* texte texte texte  */
 .gran-container {
     display: flex;
     justify-content: center;
@@ -150,7 +147,7 @@ nav ul li a{
 }
 
 .box:nth-child(odd) {
-    transform: translateY(-16px);
+    transform: translateY(16px);
 }
 
 .box:nth-child(even) {
@@ -178,14 +175,8 @@ nav ul li a{
     transition-delay: 400ms;
 }
 
-
-
-/* texte texte texte  */
-
-
-
-footer {
-    margin-top: auto;
+.footer {
+    margin-top: 100px;
 }
 
 .texto-footer {
@@ -196,4 +187,109 @@ footer {
     margin-top: 10px;
     align-items: center;
     flex-wrap: wrap;
+}
+
+@media screen and (max-width: 768px) {
+
+    body {
+        background-size:cover;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .logo img {
+        width: 40vw;
+    }
+
+    .logo a {
+        width: 40vw;
+    }
+
+    nav ul {
+        display: block;
+        text-wrap: wrap;
+        text-align: center;
+        justify-content: space-between;
+    }
+
+    .footer {
+        bottom: 500px;
+        margin-top: 150px;
+        padding-bottom: 0;
+    }
+    
+    .texto-footer {
+        margin-top: 100px;
+    }
+    
+    .icon {
+        position: fixed;
+        bottom: 30px;
+        right: 30px;
+        font-size: 20px;
+        background-color: #01e675;
+        color: white;
+        border-radius: 50%;
+        padding: 8px;
+        width: 20px;
+        height: 20px;
+        text-align: center;
+        text-decoration: none;
+        box-shadow: 1px 1px 1px #c0bdbd;
+    }
+    
+    .icon:hover {
+        background-color: #fff;
+        color: #029e3b;
+        font-weight: 300;
+        box-shadow: 2px 2px 10px #5fe690;
+    }
+
+    .container {
+        padding: 20vw;
+        position: relative;
+        display: grid;
+        grid-template-columns: 2fr 2fr;
+        gap: 1em;
+        width: 50vw;
+        height: 50vw;
+        transition: all 400ms;
+        border-radius: 20%;
+    }
+    
+    .box::after {
+        content: attr(data-text);
+        position: absolute;
+        bottom: -40vw;
+        background: rgb(40, 31, 54);
+        color: #c6c6c6;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+        text-wrap: wrap;
+        opacity: 0;
+        transition: all 400ms;
+    }
+    
+    .box:nth-child(odd) {
+        transform: translateY(-1px);
+    }
+    
+    .box:nth-child(even) {
+        transform: translateY(-1px);
+    }
+
+    .box.box-2::after {
+        height: auto;
+        text-align:center;
+        font-size: xx-small;
+    }
+
+    .box.box-1::after {
+        height: auto;
+        text-align:center;
+        font-size: xx-small;
+    }
 }

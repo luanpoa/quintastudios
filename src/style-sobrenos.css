@@ -144,3 +144,44 @@ span {
     align-items: center;
     flex-wrap: wrap;
 }
+
+
+
+
+
+@media screen and (max-width: 768px) {
+
+    body {
+        background-size:cover;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .logo img {
+        width: 40vw;
+    }
+
+    .logo a {
+        width: 40vw;
+    }
+
+    nav ul {
+        display: block;
+        text-wrap: wrap;
+        text-align: center;
+        justify-content: space-between;
+    }
+
+    .footer {
+        bottom: 500px;
+        margin-top: 150px;
+        padding-bottom: 0;
+    }
+    
+    .texto-footer {
+        margin-top: 100px;
+    }
+}

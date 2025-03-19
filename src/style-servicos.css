@@ -81,7 +81,6 @@ nav ul li a{
     letter-spacing: 4px;
 }
 
-
 .conteudo {
     display: flex;
     flex-direction: column;
@@ -100,13 +99,36 @@ nav ul li a{
     text-decoration: underline;
 }
 
+.conteudo p {
+    font-family: 'Jersey 10' , sans-serif;
+    text-align: center;
+    text-wrap: balance;
+}
+
 .servicos {
     min-height: 100%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+.servicos p {
+    font-family: 'Jersey 10' , sans-serif;
+    text-align: center;
+    letter-spacing: 2px;
+    color: red;
+}
+
+.servicos img {
+    width: 400px;
+    height: 400px;
+    padding: 20px;
+
 }
 
 .box1 {
@@ -116,8 +138,6 @@ nav ul li a{
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-around;
-    margin: 100px 0;
-    border: 64px;
 }
 
 .box1 img {
@@ -224,4 +244,41 @@ nav ul li a{
     margin-top: 100px;
     align-items: center;
     flex-wrap: wrap;
+}
+
+@media screen and (max-width: 768px) {
+
+    body {
+        background-size:cover;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .logo img {
+        width: 40vw;
+    }
+
+    .logo a {
+        width: 40vw;
+    }
+
+    nav ul {
+        display: block;
+        text-wrap: wrap;
+        text-align: center;
+        justify-content: space-between;
+    }
+
+    .footer {
+        bottom: 500px;
+        margin-top: 150px;
+        padding-bottom: 0;
+    }
+    
+    .texto-footer {
+        margin-top: 100px;
+    }
 }
